@@ -48,7 +48,7 @@ gem 'daemons'
 # comment out those you do don't need or use a different Gemfile
 gem 'mysql2', '~> 0.3.13'
 gem 'sqlite3'
-gem 'pg'
+gem 'pg', '~> 0.15'
 
 group :development do
   gem 'view_marker'
@@ -87,6 +87,7 @@ group :production do
   gem 'activerecord-nulldb-adapter'
   #version updates must be done in the Dockerfile as well
   gem 'passenger', '= 5.3.7'
+  gem 'rails_serve_static_assets', '= 0.0.5'
 end
 
 platforms :ruby do

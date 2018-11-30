@@ -5,7 +5,7 @@ applications:
 - name: iqvoc
   memory: 1G
   instances: 1
-  random-route: true
+  random-route: false
   env:
       RAILS_ENV: production
       DB_HOST: op-nano-dev-pgsql-01.springernature.com
